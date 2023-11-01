@@ -62,7 +62,7 @@ def test_access_item_can_access_an_item_when_given_an_index_equal_to_or_above_th
 
 # QUESTION 5
 # This function should take a number from 1 to 7 inclusive, and return a string of the corresponding day of the week
-# BONUS POINTS: Try and solve this without using if statements! Hint: a 'lookup object' might be useful here.
+# BONUS POINTS: Try and solve this without using if statements! Hint: a 'lookup dictionary' might be useful here.
 
 def find_day_of_the_week(num):
     pass
