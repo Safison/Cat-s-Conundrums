@@ -13,7 +13,7 @@ def test_connect_strings():
 
 
 # QUESTION 2
-# take a string as an argument and return a boolean based on whether the word given ends with 'ing'
+# This function should take a string as an argument and return a boolean based on whether the word given ends with 'ing'
 
 def check_word_ends_with_ing(): 
     pass
@@ -27,7 +27,7 @@ def test_check_word_ends_with_ing():
 
 
 # QUESTION 3
-# take a string as an argument
+# This function should take a string as an argument
 # each string may end with a full-stop, exclamation mark, or question mark
 # if the string doesn't end with punctuation, return the string with a full-stop added at the end. Otherwise, return the string unchanged
 
@@ -56,24 +56,24 @@ def test_get_remainder():
 
 
 # QUESTION 5
-# This function should take an object and a key as its arguments and return the value found at the provided key in the input object
-# If the key doesn't exist on the object, this function should return a string of "property not found"
+# This function should take an dictionary and a key as its arguments and return the value found at the provided key in the input dictionary
+# If the key doesn't exist on the dictionary, this function should return a string of "property not found"
 
-def access_object(obj, key): 
+def access_object(obj, key):
     pass
 
 
 def test_access_object():
-    assert access_object({ "name": "nara", "age": 5 }, "name") == "nara"
-    assert access_object({ "name": "nara", "age": 5 }, "age") == 5
-    assert access_object({ "name": "nara", "age": 5 }, "email") == "property not found"
+    assert access_object({"name": "nara", "age": 5}, "name") == "nara"
+    assert access_object({"name": "nara", "age": 5}, "age") == 5
+    assert access_object({"name": "nara", "age": 5}, "email") == "property not found"
 
 
 # QUESTION 6
 # In markdown files (e.g. 'README.md') we can denote words as bold by putting two asterisks on either side of them, such as: **hello**
 # This function should take an list of strings as an argument and return an list consisting of the same strings but in bold - ie with two asterisks either side of them
 
-def make_all_words_bold(str_list): 
+def make_all_words_bold(str_list):
     pass
 
 
@@ -84,7 +84,7 @@ def test_make_all_words_bold():
 
 # QUESTION 7
 # This function should take an list of numbers as an argument and return an list containing all positive numbers from the input (retaining the order)
-def get_positive_numbers(num_list): 
+def get_positive_numbers(num_list):
     pass
 
 
