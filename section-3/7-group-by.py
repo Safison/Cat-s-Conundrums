@@ -8,7 +8,7 @@
 #   { name: 'dave', location: 'leeds' },
 # ];
 
-# groupBy(northcoders, 'location');
+# group_by(northcoders, 'location');
 
 # The function returns an dictionary where the keys represent the matching values and each matching dictionary is in an list.
 
