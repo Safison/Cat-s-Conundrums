@@ -23,21 +23,21 @@ def test_fold_list_folds_an_even_length_list():
     assert fold_list([1, 2, 3, 10, 34, 100], 1) == [101, 36, 13]
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_fold_list_folds_an_odd_length_list():
     assert fold_list([1, 2, 3], 1) == [4, 2]
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_fold_list_folds_an_even_length_list_multiple_times():
     assert fold_list([1, 2, 3, 10, 34, 100], 2) == [114, 36]
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_fold_list_folds_a_list_to_a_single_value():
     assert fold_list([1, 2, 3, 10, 34, 100], 3) == [150]
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_fold_list_returns_repeated_folds_remain_the_same():
     assert fold_list([1, 2, 3, 10, 34, 100], 4) == [150]

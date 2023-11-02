@@ -14,7 +14,7 @@ def test_counter_spy_returns_an_empty_list_if_the_only_person_is_a_spy():
     assert counter_spy(['Simon']) == []
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_counter_spy_returns_a_list_with_all_spies_removed():
     assert counter_spy(['Simon', 'Cat', 'Kyle']) == ['Cat']
     assert counter_spy(['Simon', 'Cat', 'Kyle', 'Danika', 'Alex', 'Chon']) == ['Cat', 'Danika', 'Alex', 'Chon']
@@ -25,7 +25,7 @@ def test_counter_spy_returns_a_list_with_all_spies_removed():
 # Also, our spy admin team have asked that the names come back in alphabetical order, for spy filing purposes.
 # So if you could do that you'd really be saving them a lot of work. Thanks.
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_counter_spy_returns_a_list_with_names_in_alphabetical_order():
     assert counter_spy(['Simon', 'Cat', 'Kyle', 'Danika', 'Alex', 'Chon']) == ['Alex', 'Cat', 'Chon', 'Danika']
 

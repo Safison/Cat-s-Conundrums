@@ -19,36 +19,35 @@ def password_score(password):
     pass
 
 
-
 def test_password_score_returns_score_1_for_less_than_four_characters():
     assert password_score("cat") == 1
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_password_score_returns_score_2_for_less_than_nine_characters():
     assert password_score("cattycat") == 2
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_password_score_returns_score_3_for_more_than_eight_characters():
     assert password_score("catcatcat") == 3
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_password_score_returns_score_4_for_more_than_eight_characters_and_includes_a_number():
     assert password_score("catcatcat1") == 4
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_password_score_returns_score_5_for_more_than_eight_characters_which_includes_a_number_and_special_character():
     assert password_score("catcat1#2$") == 5
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_password_score_returns_score_6_for_more_than_twelve_characters_which_includes_a_number():
     assert password_score("catcatcatcat123") == 6
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_password_score_returns_score_7_for_more_than_twelve_characters_which_includes_a_number_and_special_character():
     assert password_score("catcatcat1!2@3#") == 7

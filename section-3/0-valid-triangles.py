@@ -14,21 +14,21 @@ def test_valid_triangles_returns_0_when_passed_no_triangles():
     assert valid_triangles([]) == 0
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_valid_triangles_returns_0_when_passed_a_list_with_no_valid_triangles():
     assert valid_triangles([[5, 10, 25]]) == 0
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_valid_triangles_returns_1_when_passed_a_list_with_a_single_valid_triangle():
     assert valid_triangles([[5, 4, 5]]) == 1
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_valid_triangles_returns_1_when_passed_a_list_with_a_single_valid_triangle():
     assert valid_triangles([[5, 4, 5]]) == 1
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_valid_triangles_returns_2_when_passed_a_list_with_2_valid_and_1_invalid_triangle():
     assert valid_triangles([[5, 10, 25], [5, 4, 5], [542, 586, 419]]) == 2

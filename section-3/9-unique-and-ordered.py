@@ -12,11 +12,11 @@ def test_unique_and_ordered_returns_unique_ordered_numbers_from_an_list():
     assert unique_and_ordered([1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 1, 1]) == [1, 2, 3, 1]
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_unique_and_ordered_returns_unique_ordered_letters_from_a_string():
     assert unique_and_ordered("nnoorrtthhccooddeerrss") == ["n", "o", "r", "t", "h", "c", "o", "d", "e", "r", "s"]
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_unique_and_ordered_is_case_sensitive_for_strings():
     assert unique_and_ordered("AaAAABBBCCCc") == ["A", "a", "A", "B", "C", "c"]
