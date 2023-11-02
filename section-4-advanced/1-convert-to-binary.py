@@ -19,7 +19,7 @@ def test_convert_to_binary_can_convert_a_single_digit_decimal_number_to_binary()
     assert convert_to_binary(7) == "111"
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_convert_to_binary_can_convert_a_multiple_digit_decimal_number_to_binary():
     assert convert_to_binary(10) == "1010"
     assert convert_to_binary(23) == "10111"

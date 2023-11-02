@@ -13,12 +13,12 @@ def test_find_missing_letter_returns_an_empty_string_if_no_letters_are_missing()
     assert find_missing_letter(["A", "B", "C", "D", "E"]) == ""
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_find_missing_letter_returns_a_missing_capital_letter():
     assert find_missing_letter(["A", "B", "C", "E"]) == "D"
 
 
-@pytest.mark.skip(reason="delete this line when want to run this test")
+@pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_find_missing_letter_returns_a_missing_lower_case_letter():
     assert find_missing_letter(["e", "f", "g", "i"]) == "h"
 
