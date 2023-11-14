@@ -1,6 +1,7 @@
 import pytest
 
-# This function should take a string representing a time with hours and minutes separated by a colon e.g. "13:25"
+# This function should take a string representing a time with hours and
+#  minutes separated by a colon e.g. "13:25"
 # Some of the times are written in the 24-hour clock format
 # This function should return the time written in the 12-hour clock format
 
@@ -22,5 +23,3 @@ def test_convert_time_string_converts_an_afternoon_time_to_the_12_hour_format():
 def test_convert_time_string_converts_times_in_the_hour_after_midnight_to_the_12_hour_format():
     assert convert_time_string("00:56") == "12:56"
     assert convert_time_string("00:00") == "12:00"
-
-

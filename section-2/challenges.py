@@ -1,5 +1,9 @@
+import pytest
+
+
 # QUESTION 1
-# This function should take two strings as arguments and return true if their final character is the same or false if not
+# This function should take two strings as arguments and return True if
+#  their final character is the same or False if not
 
 def check_same_final_character():
     pass
@@ -13,12 +17,14 @@ def test_check_same_final_character():
 
 
 # QUESTION 2
-# This function should take a string as an argument and return true if every letter is upper case and false if at least one character is not
+# This function should take a string as an argument and return True if
+#  every letter is upper case and False if at least one character is not
 
 def is_all_upper_case():
     pass
 
 
+@pytest.mark.skip()
 def test_is_all_upper_case():
     assert is_all_upper_case("hello") == False
     assert is_all_upper_case("WORLD") == True
@@ -27,12 +33,14 @@ def test_is_all_upper_case():
 
 
 # QUESTION 3
-# This function should take a string as its argument and return a string consisting of all vowels found in the input (retaining the order)
+# This function should take a string as its argument and return a
+#  string consisting of all vowels found in the input (retaining the order)
 
 def collect_the_vowels(str):
     pass
 
 
+@pytest.mark.skip()
 def test_collect_the_vowels():
     assert collect_the_vowels("a") == "a"
     assert collect_the_vowels("bcd") == ""
@@ -41,33 +49,45 @@ def test_collect_the_vowels():
 
 
 # QUESTION 4
-# This function should take two arguments, an list and an index, and return the element at that specified index
-# The index provided may be equal to or greater than the length of the given list. In this case, rather than counting past the end of the list where there are no values, the indexing should be considered to "loop back around" and continue from the start of the list
+# This function should take two arguments, an list and an index, and return
+#  the element at that specified index
+
+# The index provided may be equal to or greater than the length of the
+#  given list. In this case, rather than counting past the end of the
+#  list where there are no values, the indexing should be considered to
+#  "loop back around" and continue from the start of the list
+
 # For examples of this behaviour, look at the second group of tests below
 
 def access_item(list, index):
     pass
 
 
-def test_access_item_can_access_an_item_when_given_an_index_below_the_list_length():
+@pytest.mark.skip()
+def test_access_item_retrieves_item_when_passed_index_less_than_list_len():
     assert access_item(["a", "b", "c", "d"], 2) == "c"
     assert access_item(["a", "b", "c", "d"], 0) == "a"
     assert access_item(["a", "b", "c", "d"], 3) == "d"
 
-def test_access_item_can_access_an_item_when_given_an_index_equal_to_or_above_the_list_length():
+
+@pytest.mark.skip()
+def test_access_item_retrieves_item_when_passed_index_greater_or_equal_to_list_len():
     assert access_item(["a", "b", "c", "d"], 4) == "a"
     assert access_item(["a", "b", "c", "d"], 6) == "c"
     assert access_item(["a", "b", "c", "d"], 10) == "c"
 
 
 # QUESTION 5
-# This function should take a number from 1 to 7 inclusive, and return a string of the corresponding day of the week
-# BONUS POINTS: Try and solve this without using if statements! Hint: a 'lookup dictionary' might be useful here.
+# This function should take a number from 1 to 7 inclusive, and return a
+#  string of the corresponding day of the week
+# BONUS POINTS: Try and solve this without using if statements! Hint: a
+#  'lookup dictionary' might be useful here.
 
 def find_day_of_the_week(num):
     pass
 
 
+@pytest.mark.skip()
 def test_find_day_of_the_week():
     assert find_day_of_the_week(3) == "Wednesday"
     assert find_day_of_the_week(7) == "Sunday"
@@ -75,12 +95,14 @@ def test_find_day_of_the_week():
 
 
 # QUESTION 6
-# This function should take two numbers, a and b, and return a string representing the value of a as a percentage of b
+# This function should take two numbers, a and b, and return a string
+#  representing the value of a as a percentage of b
 
 def create_percentage():
     pass
 
 
+@pytest.mark.skip()
 def test_create_percentage():
     assert create_percentage(1, 2) == "50%"
     assert create_percentage(50, 100) == "50%"
@@ -90,12 +112,14 @@ def test_create_percentage():
 
 
 # QUESTION 7
-# This function should take a string containing a number wrapped in a pair of round brackets and return said number
+# This function should take a string containing a number wrapped in a pair
+#  of round brackets and return said number
 
 def extract_number():
     pass
 
 
+@pytest.mark.skip()
 def test_extract_number():
     assert extract_number("lasjdasasj(1)asljdlajk") == 1
     assert extract_number("qwasdaoyer(666)iuwyeibasdahgsd") == 666

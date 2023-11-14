@@ -1,7 +1,10 @@
 import pytest
 
-# This function that accepts a string of any length, and replaces each letter within each word with the corresponding index that that letter has in the alphabet.
-# You must have a space between each index number, and do NOT need to account extra for spaces between words.
+# This function that accepts a string of any length, and replaces each letter
+#  within each word with the corresponding index that that letter has in the
+#  alphabet.
+# You must have a space between each index number, and do NOT need to account
+#  extra for spaces between words.
 
 
 def alphabet_replace(string):
@@ -19,4 +22,5 @@ def test_alphabet_replace_is_case_insensitive():
 
 @pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_alphabet_replace_ignores_spaces_between_words():
-    assert alphabet_replace("expert programming") == "5 24 16 5 18 20 16 18 15 7 18 1 13 13 9 14 7"
+    assert alphabet_replace(
+        "expert programming") == "5 24 16 5 18 20 16 18 15 7 18 1 13 13 9 14 7"
