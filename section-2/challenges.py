@@ -41,7 +41,7 @@ def test_collect_the_vowels():
 
 
 # QUESTION 4
-# This function should take two arguments, an list and an index, and return the element at that specified index
+# This function should take two arguments, a list and an index, and return the element at that specified index
 # The index provided may be equal to or greater than the length of the given list. In this case, rather than counting past the end of the list where there are no values, the indexing should be considered to "loop back around" and continue from the start of the list
 # For examples of this behaviour, look at the second group of tests below
 

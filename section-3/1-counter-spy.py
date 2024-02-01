@@ -1,7 +1,7 @@
 import pytest
 
-# This function takes an list of names.
-# The function should return an list containing the names of the people who aren't spies.
+# This function takes a list of names.
+# The function should return a list containing the names of the people who aren't spies.
 # Recent intelligence has revealed that all spies codenames include the letters 's', 'p' or 'y'.
 # You can't afford to take any chances, and all names that include those letters should be removed.
 
@@ -17,7 +17,7 @@ def test_counter_spy_returns_an_empty_list_if_the_only_person_is_a_spy():
 @pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_counter_spy_returns_a_list_with_all_spies_removed():
     assert counter_spy(['Simon', 'Cat', 'Kyle']) == ['Cat']
-    assert counter_spy(['Simon', 'Cat', 'Kyle', 'Danika', 'Alex', 'Chon']) == ['Cat', 'Danika', 'Alex', 'Chon']
+    assert counter_spy(['Simon', 'Alex', 'Cat', 'Chon', 'Kyle', 'Danika']) == ['Alex', 'Cat', 'Chon', 'Danika']
 
 
 # EXTRA CREDIT:
@@ -27,7 +27,7 @@ def test_counter_spy_returns_a_list_with_all_spies_removed():
 
 @pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_counter_spy_returns_a_list_with_names_in_alphabetical_order():
-    assert counter_spy(['Simon', 'Cat', 'Kyle', 'Danika', 'Alex', 'Chon']) == ['Alex', 'Cat', 'Chon', 'Danika']
+    assert counter_spy(['Simon', 'Mick', 'Cat', 'Kyle', 'Danika', 'Alex', 'Chon']) == ['Alex', 'Cat', 'Chon', 'Danika', 'Mick']
 
 
 
