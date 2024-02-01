@@ -71,7 +71,7 @@ def test_access_object():
 
 # QUESTION 6
 # In markdown files (e.g. 'README.md') we can denote words as bold by putting two asterisks on either side of them, such as: **hello**
-# This function should take an list of strings as an argument and return an list consisting of the same strings but in bold - ie with two asterisks either side of them
+# This function should take a list of strings as an argument and return a list consisting of the same strings but in bold - ie with two asterisks either side of them
 
 def make_all_words_bold(str_list):
     pass
@@ -83,12 +83,12 @@ def test_make_all_words_bold():
 
 
 # QUESTION 7
-# This function should take an list of numbers as an argument and return an list containing all positive numbers from the input (retaining the order)
+# This function should take a list of numbers as an argument and return a list containing all positive numbers from the input (retaining the order)
 def get_positive_numbers(num_list):
     pass
 
 
-def test_get_positive_numbers(num_list):
+def test_get_positive_numbers():
     assert get_positive_numbers([1, -1, 2, -2, 3, -3]) == [1, 2, 3]
     assert get_positive_numbers([-80, 9, 100, 13, 20, -7]) == [9, 100, 13, 20]
     assert get_positive_numbers([-1, -50, -999]) == []

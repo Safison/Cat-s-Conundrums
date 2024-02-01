@@ -1,7 +1,7 @@
 import pytest
 
 # Implement a function which takes as an argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.
-# The function should be able to to work with both strings and lists, and should return an list.
+# The function should be able to to work with both strings and lists, and should return a list.
 
 
 def unique_and_ordered():
