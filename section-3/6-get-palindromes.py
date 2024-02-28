@@ -1,8 +1,10 @@
 import pytest
 
-# This function takes a list of words and returns a list containing only the palindromes.
+# This function takes an list of words and returns an list containing only
+#  the palindromes.
 # A palindrome is a word that is spelled the same way backwards.
-# E.g. ['foo', 'racecar', 'pineapple', 'porcupine', 'tacocat'] =>  ['racecar', 'tacocat']
+# E.g. ['foo', 'racecar', 'pineapple', 'porcupine', 'tacocat'] =>
+#  ['racecar', 'tacocat']
 
 
 def get_palindromes(words):
@@ -21,7 +23,8 @@ def test_get_palindromes_identifies_palindromes():
 
 @pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_get_palindromes_ignores_non_palindromes():
-    assert get_palindromes(["racecar", "kayak", "tacocat"]) == ["racecar", "kayak", "tacocat"]
+    assert get_palindromes(["racecar", "kayak", "tacocat"]) == [
+        "racecar", "kayak", "tacocat"]
     assert get_palindromes(["pineapple", "pony", "racecar"]) == ["racecar"]
 
 

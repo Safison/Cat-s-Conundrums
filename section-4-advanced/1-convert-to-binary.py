@@ -1,7 +1,9 @@
 import pytest
 
-# Implement a function which takes any decimal number and converts it into binary format.
-# The return value of the function should always be a string of "O"s and "1"s representing the binary number
+# Implement a function which takes any decimal number and converts it into
+#  binary format.
+# The return value of the function should always be a string of "O"s and
+#  "1"s representing the binary number
 
 
 def convert_to_binary():

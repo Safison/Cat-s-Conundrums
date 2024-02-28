@@ -1,6 +1,8 @@
 import pytest
 
-# Implement a function collect_like_terms which takes an expression in a string like 'a + a + a' and then returns a string with a simplified algebraic expression, which in the previous case would be 3a.
+# Implement a function collect_like_terms which takes an expression in a
+#  string like 'a + a + a' and then returns a string with a simplified
+#  algebraic expression, which in the previous case would be 3a.
 # The characters should be in alphabetical order by default.
 # You can assume that the only operation connecting the terms is addition.
 

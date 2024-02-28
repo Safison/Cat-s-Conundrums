@@ -4,13 +4,15 @@ import pytest
 # Invalid inputs should return 0.
 
 # Score	Criteria	Example
-# 1 Less than four characters	e.g. bob
-# 2	Less than nine characters	e.g. bobbybob
-# 3	More than eight characters and all letters	e.g. bobbobbob
-# 4	More than eight characters includes a number	e.g. bobbobbob1
-# 5	More than eight characters includes a number and special character	e.g. bobbob1#2$
-# 6	More than twelve characters includes a number	e.g. bobbobbobbob123
-# 7	More than twelve characters includes a number and special character	e.g. bobbobbob1!2@3#
+# 1: Less than four characters	e.g. bob
+# 2: Less than nine characters	e.g. bobbybob
+# 3: More than eight characters and all letters	e.g. bobbobbob
+# 4: More than eight characters includes a number	e.g. bobbobbob1
+# 5: More than eight characters includes a number and special character
+#  e.g. bobbob1#2$
+# 6: More than twelve characters includes a number	e.g. bobbobbobbob123
+# 7: More than twelve characters includes a number and special character
+#  e.g. bobbobbob1!2@3#
 
 # Special characters: ! @ £ # $ % ^ & *
 
