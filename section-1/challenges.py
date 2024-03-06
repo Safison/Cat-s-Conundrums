@@ -110,7 +110,7 @@ def get_positive_numbers(num_list):
 
 
 @pytest.mark.skip()
-def test_get_positive_numbers(num_list):
+def test_get_positive_numbers():
     assert get_positive_numbers([1, -1, 2, -2, 3, -3]) == [1, 2, 3]
     assert get_positive_numbers([-80, 9, 100, 13, 20, -7]) == [9, 100, 13, 20]
     assert get_positive_numbers([-1, -50, -999]) == []
