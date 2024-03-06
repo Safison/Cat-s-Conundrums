@@ -20,7 +20,7 @@ def test_counter_spy_returns_an_empty_list_if_the_only_person_is_a_spy():
 @pytest.mark.skip(reason="delete this line when you want to run this test")
 def test_counter_spy_returns_a_list_with_all_spies_removed():
     assert counter_spy(['Simon', 'Cat', 'Kyle']) == ['Cat']
-    assert counter_spy(['Simon', 'Cat', 'Kyle', 'Danika', 'Alex', 'Chon']) == [
+    assert counter_spy(['Simon', 'Alex', 'Kyle', 'Cat', 'Chon', 'Danika']) == [
         'Alex', 'Cat', 'Chon', 'Danika']
 
 
