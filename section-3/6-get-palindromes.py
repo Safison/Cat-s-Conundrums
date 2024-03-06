@@ -1,6 +1,6 @@
 import pytest
 
-# This function takes an list of words and returns an list containing only
+# This function takes a list of words and returns a list containing only
 #  the palindromes.
 # A palindrome is a word that is spelled the same way backwards.
 # E.g. ['foo', 'racecar', 'pineapple', 'porcupine', 'tacocat'] =>

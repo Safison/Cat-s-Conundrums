@@ -1,6 +1,6 @@
 # You will need to implement a function create_power_set()
 
-# It will need to return an list of all possible sub-lists given some
+# It will need to return a list of all possible sub-lists given some
 #  starting list
 
 # For example,

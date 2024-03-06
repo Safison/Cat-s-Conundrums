@@ -49,7 +49,7 @@ def test_collect_the_vowels():
 
 
 # QUESTION 4
-# This function should take two arguments, an list and an index, and return
+# This function should take two arguments, a list and an index, and return
 #  the element at that specified index
 
 # The index provided may be equal to or greater than the length of the
