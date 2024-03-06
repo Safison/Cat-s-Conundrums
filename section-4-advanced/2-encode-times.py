@@ -16,7 +16,7 @@
 # So we could represent the data above by a string in the following way:
 # ".....####################.....#########################....."
 
-# Implement a function that will take an list of time intervals for being
+# Implement a function that will take a list of time intervals for being
 #  awake/asleep over 60 mins and will generate a string encoding this
 #  information with a series of . and #
 

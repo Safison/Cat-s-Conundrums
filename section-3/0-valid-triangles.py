@@ -1,7 +1,7 @@
 import pytest
 
-# This function that takes an list of triangles.
-# Each triangle is represented as an list e.g. [10, 12, 22] where the three
+# This function that takes a list of triangles.
+# Each triangle is represented as a list e.g. [10, 12, 22] where the three
 #  numbers are the sides of the triangle.
 # The function should return the count of triangles that are valid.
 # To be a valid triangle, the sum of any two sides must be larger than the

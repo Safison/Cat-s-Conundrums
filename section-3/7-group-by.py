@@ -1,4 +1,4 @@
-# This function takes an list of dictionaries and a string which should
+# This function takes a list of dictionaries and a string which should
 #  match a key of the dictionaries in the list
 
 # northcoders = [
@@ -11,8 +11,8 @@
 
 # group_by(northcoders, 'location');
 
-# The function returns an dictionary where the keys represent the matching
-#  values and each matching dictionary is in an list.
+# The function returns a dictionary where the keys represent the matching
+#  values and each matching dictionary is in a list.
 
 #  // result
 
