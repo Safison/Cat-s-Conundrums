@@ -1,3 +1,5 @@
+from test_api.checks import run_test, skip_test, format_err_msg
+
 # This function takes a list of dictionaries and a string which should
 #  match a key of the dictionaries in the list
 
@@ -35,6 +37,7 @@ def group_by(list, key):
     pass
 
 
+@run_test
 def test_group_by_returns_northcoders_group_by_location():
     northcoders = [{"name": "cat", "location": "manchester"},
                    {"name": "liam", "location": "york"},
@@ -42,7 +45,7 @@ def test_group_by_returns_northcoders_group_by_location():
                    {"name": "haz", "location": "manchester"},
                    {"name": "dave", "location": "leeds"}]
 
-    assert group_by(northcoders, "location") == {
+    expected_grouped_data = {
         "manchester": [
             {"name": "cat", "location": "manchester"},
             {"name": "haz", "location": "manchester"}
@@ -55,3 +58,9 @@ def test_group_by_returns_northcoders_group_by_location():
             {"name": "dave", "location": "leeds"}
         ]
     }
+
+    assert group_by(northcoders, "location") == expected_grouped_data
+
+
+if __name__ == "__main__":
+    test_group_by_returns_northcoders_group_by_location()
