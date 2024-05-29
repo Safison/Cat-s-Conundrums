@@ -1,3 +1,5 @@
+from test_api.checks import run_test, format_err_msg
+
 # The statements below list the times someone spent awake / asleep over the
 #  course of a 60 minute period:
 
@@ -25,15 +27,34 @@ def encode_times(times):
     pass
 
 
+@run_test
 def test_encode_times_can_encode_a_series_of_times_into_a_time_string():
     assert encode_times(
         [0, 5, 25, 30, 55]) == (
-            ".....####################.....#########################.....")
+            ".....####################.....#########################....."), \
+        format_err_msg(
+        ".....####################.....#########################.....",
+        encode_times([0, 5, 25, 30, 55])
+    )
+
     assert encode_times(
         [0, 40, 50]) == (
-            "........................................##########..........")
+            "........................................##########.........."), \
+        format_err_msg(
+        "........................................##########..........",
+        encode_times([0, 40, 50])
+    )
+
     assert encode_times(
         [0, 24, 29]) == (
-            "........................#####...............................")
+            "........................#####..............................."), \
+        format_err_msg(
+        "........................#####...............................",
+        encode_times([0, 24, 29])
+    )
 
     # feel free to create your own assertions too with this challenge
+
+
+if __name__ == "__main__":
+    test_encode_times_can_encode_a_series_of_times_into_a_time_string()
