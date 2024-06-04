@@ -156,6 +156,7 @@ def test_extract_number():
 
 if __name__ == "__main__":
     test_check_same_final_character()
+    test_is_all_upper_case()
     test_collect_the_vowels()
     test_access_item_retrieves_item_when_passed_index_less_than_list_len()
     test_access_item_retrieves_item_when_passed_index_greater_or_equal_to_list_len()
