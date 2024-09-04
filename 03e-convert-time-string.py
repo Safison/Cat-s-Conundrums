@@ -6,7 +6,7 @@ from test_api.checks import run_test, skip_test, format_err_msg
 # This function should return the time written in the 12-hour clock format
 
 
-def convert_time_string(string):
+def convert_time_string(sample_string):
     pass
 
 

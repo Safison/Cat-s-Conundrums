@@ -40,7 +40,7 @@ def test_is_all_upper_case():
 # This function should take a string as its argument and return a
 #  string consisting of all vowels found in the input (retaining the order)
 
-def collect_the_vowels(str):
+def collect_the_vowels(sample_string):
     pass
 
 
@@ -65,7 +65,7 @@ def test_collect_the_vowels():
 
 # For examples of this behaviour, look at the second group of tests below
 
-def access_item(list, index):
+def access_item(sample_list, index):
     pass
 
 
