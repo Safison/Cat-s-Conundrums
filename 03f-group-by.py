@@ -33,7 +33,7 @@ from test_api.checks import run_test, skip_test, format_err_msg
 # }
 
 
-def group_by(list, key):
+def group_by(sample_list, key):
     pass
 
 

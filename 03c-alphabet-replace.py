@@ -7,7 +7,7 @@ from test_api.checks import run_test, skip_test, format_err_msg
 #  extra for spaces between words.
 
 
-def alphabet_replace(string):
+def alphabet_replace(sample_string):
     pass
 
 
