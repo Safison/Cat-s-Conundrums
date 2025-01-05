@@ -11,6 +11,21 @@ from test_api.checks import run_test, skip_test, format_err_msg
 
 
 def find_missing_letter(letters):
+    str1=''
+    case_char=letters[0]
+    first_letter_index= ord(letters[0].lower()) - ord('a')+1
+    i=1
+    while i in range(len(letters)):
+        if first_letter_index+i != ord(letters[i].lower()) - ord('a')+1:
+            str1=first_letter_index+i
+        i+=1
+    if str1 != '':
+        if letters[0]==letters[0].upper():
+            return chr(int(str1) + ord('a')-1).upper()
+        else:
+            return chr(int(str1) + ord('a')-1)
+    else:
+        return str1
     pass
 
 
@@ -20,13 +35,13 @@ def test_find_missing_letter_returns_an_empty_string_if_no_letters_are_missing()
         format_err_msg('', find_missing_letter(["A", "B", "C", "D", "E"]))
 
 
-@skip_test
+@run_test
 def test_find_missing_letter_returns_a_missing_capital_letter():
     assert find_missing_letter(["A", "B", "C", "E"]) == "D", \
         format_err_msg('D', find_missing_letter(["A", "B", "C", "E"]))
 
 
-@skip_test
+@run_test
 def test_find_missing_letter_returns_a_missing_lower_case_letter():
     assert find_missing_letter(["e", "f", "g", "i"]) == "h", \
         format_err_msg('h', find_missing_letter(["e", "f", "g", "i"]))

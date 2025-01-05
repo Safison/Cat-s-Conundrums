@@ -8,8 +8,18 @@ from test_api.checks import run_test, skip_test, format_err_msg
 
 
 def unique_and_ordered(seq):
-    pass
-
+    new_list=[]
+    new_list.append(seq[0])
+    j=0
+    for i in range(len(seq)):
+        if seq[i] != new_list[j]:
+            new_list.append(seq[i])
+            j+=1
+    return new_list
+       
+   
+   
+   
 
 def test_unique_and_ordered_returns_unique_ordered_numbers_from_an_list():
     assert unique_and_ordered(
@@ -18,7 +28,7 @@ def test_unique_and_ordered_returns_unique_ordered_numbers_from_an_list():
             [1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 1, 1]))
 
 
-@skip_test
+@run_test
 def test_unique_and_ordered_returns_unique_ordered_letters_from_a_string():
     assert unique_and_ordered("nnoorrtthhccooddeerrss") == [
         "n", "o", "r", "t", "h", "c", "o", "d", "e", "r", "s"], \
@@ -26,7 +36,7 @@ def test_unique_and_ordered_returns_unique_ordered_letters_from_a_string():
                        unique_and_ordered('nnoorrtthhccooddeerrss'))
 
 
-@skip_test
+@run_test
 def test_unique_and_ordered_is_case_sensitive_for_strings():
     assert unique_and_ordered("AaAAABBBCCCc") == \
         ["A", "a", "A", "B", "C", "c"], \

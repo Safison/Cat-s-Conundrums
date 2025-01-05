@@ -7,6 +7,15 @@ from test_api.checks import run_test, skip_test, format_err_msg
 
 
 def convert_time_string(sample_string):
+    hour=0
+    hour_string=sample_string[:2]
+    if int(hour_string) > 12:
+        hour=int(hour_string) - 12
+        return '0'+str(hour)+':'+sample_string[3:]
+    elif hour_string=='00':
+        return '12'+':'+sample_string[3:]
+    else:
+        return sample_string
     pass
 
 
@@ -16,13 +25,13 @@ def test_convert_time_string_returns_the_string_unchanged_if_already_within_the_
         format_err_msg("06:28", convert_time_string("06:28"))
 
 
-@skip_test
+@run_test
 def test_convert_time_string_converts_an_afternoon_time_to_the_12_hour_format():
     assert convert_time_string("16:07") == "04:07", \
         format_err_msg("04:07", convert_time_string("16:07"))
 
 
-@skip_test
+@run_test
 def test_convert_time_string_converts_times_in_the_hour_after_midnight_to_the_12_hour_format():
     assert convert_time_string("00:56") == "12:56", \
         format_err_msg("12:56", convert_time_string("00:56"))

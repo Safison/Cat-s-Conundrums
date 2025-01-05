@@ -34,6 +34,22 @@ from test_api.checks import run_test, skip_test, format_err_msg
 
 
 def group_by(sample_list, key):
+    new_dict={}
+            
+    for ele in sample_list:
+        value=ele.get(key)
+        if value:
+            if value not in new_dict:
+                new_dict[value]=[]
+            new_dict[value].append(ele)
+               
+    return new_dict
+    
+
+        
+
+
+
     pass
 
 

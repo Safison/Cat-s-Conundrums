@@ -7,7 +7,23 @@ from test_api.checks import run_test, skip_test, format_err_msg
 # You can assume that the only operation connecting the terms is addition.
 
 
-def collect_like_terms():
+def collect_like_terms(expr):
+    count = 0 
+    new_str = ''
+    for i in range(len(expr)):
+        if expr[i] == '+':
+            letter1 = expr[i-2]
+            letter2 = expr[i+2]
+            if letter1 == letter2:
+                count += 1
+                new_str = str(count) + letter1
+            else:
+                new_str += expr[i]
+    new_str.strip()
+    return new_str 
+
+
+
     pass
 
 
