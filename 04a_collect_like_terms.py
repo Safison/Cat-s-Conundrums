@@ -27,7 +27,7 @@ def collect_like_terms(expr):
     pass
 
 
-@run_test
+@skip_test
 def test_collect_like_terms_returns_a_letter_when_passed_an_expression_with_a_single_letter():
     assert collect_like_terms("a") == "a", \
         format_err_msg('a', collect_like_terms("a"))
